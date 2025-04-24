@@ -267,69 +267,52 @@ main{
 <body>
 
     <header>
-        <h1>Rafael Patrick</h1>
-        <p>Desenvolvedor Web Full Stack JavaScript</p>
-        <nav>
-            <a href="#about">Sobre Mim</a>
-            <a href="#experience">Experiência</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
-        </nav>
+        <h1>Ruan & Emily</h1>
+        <p>meu amor...</p>
+         <div id="redirecionar">
+             <input type="button" id="btn-mensagem" value="mensagens">
+            <button id="btn-foto">Nossas Fotos</button>
+            <button id="btn-desejo">Desejos</button>
+            <input type="button" id="btn-musica" value="musicas" >
+        </div>   
     </header>
 
     <main>
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <p>Sou um Desenvolvedor Web Full Stack especializado em JavaScript, apaixonado por criar soluções digitais inovadoras e eficientes. Com uma abordagem centrada no usuário, busco desenvolver interfaces amigáveis e experiências interativas que conectem pessoas e tecnologia de forma harmoniosa.</p>
+         <section id="mensagem" class="secao">
+            <div id="mensagem">
+                <h1>Minha Mensagem para Você</h1>
+                <p id="texto-mensagem">Clique no botão abaixo para uma surpresa!</p>
+                <button id="botao-surpresa">Clique Aqui!</button>
+            </div>
+            </p>
         </section>
-
-        <section id="experience">
-            <h2>Experiência</h2>
-            <p>Com mais de 16 anos de experiência na área de tecnologia, transitei por diversos papéis até me consolidar como Desenvolvedor Full Stack. Minha trajetória me proporcionou habilidades sólidas em desenvolvimento de aplicações web, resolução de problemas complexos e colaboração em equipes multidisciplinares.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Tesouro Didático</h3>
-                    <a href="https://tesourodidatico.com/" target="_blank">Visitar Site</a>
-                </div>
-                <div class="project-card">
-                    <h3>Peregrinarte</h3>
-                    <a href="https://peregrinarte.vercel.app" target="_blank">Visitar Site</a>
-                </div>
-                <div class="project-card">
-                    <h3>Faculdade Jesuíta</h3>
-                    <a href="https://faculdadejesuita.edu.br/" target="_blank">Visitar Site</a>
-                </div>
-                <div class="project-card">
-                    <h3>Padre Vaz</h3>
-                    <a href="https://padrevaz.com.br/" target="_blank">Visitar Site</a>
-                </div>
-                <div class="project-card">
-                    <h3>Passo a Pensar</h3>
-                    <a href="http://passoapensar.com.br/" target="_blank">Visitar Site</a>
-                </div>
-                <div class="project-card">
-                    <h3>Meu Site</h3>
-                    <a href="https://rafaelpatrick.com.br" target="_blank">Visitar Site</a>
-                </div>
+        
+       <section id="foto" class="secao">
+            <div id="galeria-fotos">
+                <h1>Nossas Fotos</h1>
+               <img src="imagens/foto-emily1.png" alt="Nossas fotos">
+               <img src="imagens/foto-emily2.png" alt="Nossas fotos">
+               <img src="imagens/foto-emily3.png" alt="Nossas fotos">
+               <img src="imagens/foto-emily5.png" alt="Nossas fotos"> 
+               <img src="imagens/foto-emily4.png" alt="Nossas fotos">
+           <img src="imagens/foto-emily6.png" alt="Nossas fotos">
             </div>
         </section>
-
-        <section id="contact">
-            <h2>Contato</h2>
-            <div class="contact-links">
-                <a href="mailto:seuemail@dominio.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/seuperfil" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
+        
+          <section id="desejo" class="secao">
+            <div id="desejos-futuros">
+                <h2>Nossos Desejos Futuros</h2>
+                <ul id="lista-desejos"></ul>
+                <input type="text" id="novo-desejo" placeholder="Novo desejo...">
+                <button id="adicionar-desejo">Adicionar</button>
             </div>
         </section>
+        
+       
     </main>
 
     <footer>
-        &copy; 2024 Rafael Patrick. Todos os direitos reservados.
+        &copy;Ruan & Emily.
     </footer>
 
 </body>
