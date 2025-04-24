@@ -308,12 +308,84 @@ main{
             </div>
         </section>
         
+          <section id="musica" class="secao">
+           <a href="https://www.youtube.com/watch?v=0dLX40UMUKo&list=RDWNlroc7tIAc&index=4">musica
+           </a> <br>
+           <a href="https://www.youtube.com/watch?v=_CK4O1_Bvxg&list=RDWNlroc7tIAc&index=8" >musica 2</a><br>
+    </section>
        
     </main>
 
     <footer>
         &copy;Ruan & Emily.
     </footer>
+     <script>
+         const btnmensagem = document.getElementById('btn-mensagem');
+const btnfoto = document.getElementById('btn-foto');
+const btndesejo = document.getElementById('btn-desejo');
+let btnmusica = document.getElementById('btn-musica')
+
+
+
+
+btnmensagem.addEventListener('click', () => {
+    document.getElementById('mensagem').scrollIntoView({ behavior: 'smooth' });
+});
+
+btnfoto.addEventListener('click', () => {
+    document.getElementById('foto').scrollIntoView({ behavior: 'smooth' });
+});
+
+btndesejo.addEventListener('click', () => {
+    document.getElementById('desejo').scrollIntoView({ behavior: 'smooth' });
+});
+btnmusica.addEventListener('click', () => {
+    document.getElementById('musica').scrollIntoView({behavior: 'smooth'})
+});
+
+const mensagens = [
+    "Você é a luz da minha vida.",
+    "Cada momento ao seu lado é especial.",
+    "Te amo mais que tudo!",
+    "Você é a pessoa mais incrível que conheço."
+];
+
+function exibirMensagemAleatoria() {
+    const textoMensagem = document.getElementById('texto-mensagem');
+    const indiceAleatorio = Math.floor(Math.random() * mensagens.length);
+    textoMensagem.textContent = mensagens[indiceAleatorio];
+}
+
+setInterval(exibirMensagemAleatoria, 5000); 
+
+
+const listaDesejos = document.getElementById('lista-desejos');
+const novoDesejo = document.getElementById('novo-desejo');
+const adicionarDesejo = document.getElementById('adicionar-desejo');
+
+adicionarDesejo.addEventListener('click', () => {
+    const desejo = novoDesejo.value;
+    if (desejo) {
+        const itemLista = document.createElement('li');
+        itemLista.textContent = desejo;
+        listaDesejos.appendChild(itemLista);
+        novoDesejo.value = '';
+    }
+});
+const entradas = document.getElementById('entradas');
+const novaEntrada = document.getElementById('nova-entrada');
+const adicionarEntrada = document.getElementById('adicionar-entrada');
+
+adicionarEntrada.addEventListener('click', () => {
+    const entrada = novaEntrada.value;
+    if (entrada) {
+        const novaEntradaDiv = document.createElement('div');
+        novaEntradaDiv.textContent = entrada;
+        entradas.appendChild(novaEntradaDiv);
+        novaEntrada.value = '';
+    }
+});
+     </script>
 
 </body>
 
